@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40761407-3572-4327-9BB5-FFD07716DE30}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CHOPER_CHAOS</RootNamespace>
+    <AssemblyName>CHOPER CHAOS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GamePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamePage.Designer.cs">
+      <DependentUpon>GamePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPage.Designer.cs">
+      <DependentUpon>MenuPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionPage.Designer.cs">
+      <DependentUpon>OptionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GamePage.resx">
+      <DependentUpon>GamePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPage.resx">
+      <DependentUpon>MenuPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionPage.resx">
+      <DependentUpon>OptionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pillar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helicopter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pillar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pillar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pillar66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pillar66-trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pillar76-trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pillar1crop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pillar1final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pillar2final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helicopterfinal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\background music.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ballons.gif" />
+    <Content Include="Resources\ballons2.gif" />
+    <Content Include="Resources\CHOPPERCHAOSLOGOPP.gif" />
+    <None Include="Resources\CHOPPERCHAOSLOGOPP1.gif" />
+    <Content Include="Resources\helicoptermenu.gif" />
+    <Content Include="Resources\ufomenu.gif" />
+    <None Include="Resources\ufomenu1.gif" />
+    <None Include="Resources\helicoptermenu1.gif" />
+    <None Include="Resources\ballons21.gif" />
+    <None Include="Resources\ballons1.gif" />
+    <Content Include="Resources\CHOPER LOGO.gif" />
+    <None Include="Resources\choper2.gif" />
+    <None Include="Resources\istockphoto-1085287936-612x612.jpg" />
+    <None Include="Resources\CHOPER LOGO1.gif" />
+    <Content Include="Resources\click music.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
